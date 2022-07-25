@@ -18,9 +18,9 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="experience" placeholder="inp_LSTAT" required="required" />
-        <input type="text" name="test_score" placeholder="inp_RM" required="required" />
-		<input type="text" name="interview_score" placeholder="inp_PTRATIO" required="required" />
+    	<input type="text" name="experience" placeholder="Lower Status of Population" required="required" />
+        <input type="text" name="test_score" placeholder="Avg num of rooms" required="required" />
+		<input type="text" name="interview_score" placeholder="PTRATIO" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
